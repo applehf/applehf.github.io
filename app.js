@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const fs=Promise.promisifyAll(require('fs'));
 const path = require('path');
 const router = require('./router');
+const test = require('./test');
 const PORT = 3010;
 
 app.use(bodyParser.json());
@@ -15,6 +16,8 @@ app.set("views", path.join(__dirname, "public"));
 app.set("view engine", "ejs");
 
 app.use(router);
+app.use(test);
+
 
 var server = app.listen(PORT,"0.0.0.0", function () {
     console.log('启动', PORT);

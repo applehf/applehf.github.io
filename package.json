@@ -14,6 +14,7 @@
   "author": "xleox",
   "license": "ISC",
   "dependencies": {
+    "baidu-baike": "^1.2.1",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3"
